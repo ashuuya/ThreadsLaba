@@ -27,7 +27,8 @@ public class ArcTanThread extends Thread {
                 count++;
                 secBuffer.notifyAll();
             }
+            System.out.println(Math.atan(secBuffer.remove(0)));
         }
-        System.out.println(Math.atan(secBuffer.remove(0)));
+        
     }
 }
